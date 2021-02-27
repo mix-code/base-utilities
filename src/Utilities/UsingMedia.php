@@ -1,6 +1,6 @@
 <?php
 
-namespace MixCode\BaseUtilities;
+namespace MixCode\BaseUtilities\Utilities;
 
 use Spatie\MediaLibrary\Models\Media;
 

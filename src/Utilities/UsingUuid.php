@@ -1,6 +1,6 @@
 <?php
 
-namespace MixCode\BaseUtilities;
+namespace MixCode\BaseUtilities\Utilities;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;

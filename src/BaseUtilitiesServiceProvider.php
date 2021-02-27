@@ -15,6 +15,8 @@ class BaseUtilitiesServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../config/mix-code-base-utilities.php' => config_path('/mix-code-base-utilities.php'),
         ], 'mix-code-base-utilities-config');
+
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
 
     public function register()

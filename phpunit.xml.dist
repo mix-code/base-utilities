@@ -10,7 +10,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="MoaAlaa Test Suite">
+        <testsuite name="MixCode Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
@@ -24,4 +24,8 @@
         <log type="coverage-text" target="build/coverage.txt"/>
         <log type="testdox-html" target="build/testdox.html"/>
     </logging>
+    <php>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_DATABASE" value=":memory:"/>
+    </php>
 </phpunit>
