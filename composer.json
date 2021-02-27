@@ -25,6 +25,7 @@
     ],
     "require": {
         "illuminate/support": "^5.8",
+        "artesaos/seotools": "^0.15.0",
         "spatie/laravel-medialibrary": "7.19.5"
     },
     "require-dev": {

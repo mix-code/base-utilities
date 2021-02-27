@@ -26,6 +26,6 @@
     </logging>
     <php>
         <env name="DB_CONNECTION" value="sqlite"/>
-        <env name="DB_DATABASE" value=":memory:"/>
+        <env name="DB_DATABASE" value="./database/database.sqlite"/>
     </php>
 </phpunit>

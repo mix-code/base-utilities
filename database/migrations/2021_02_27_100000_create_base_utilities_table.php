@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use MixCode\BaseUtilities\BaseUtility;
 
 class CreateBaseUtilitiesTable extends Migration
 {
@@ -15,6 +16,9 @@ class CreateBaseUtilitiesTable extends Migration
     {
         Schema::create('base_utilities', function (Blueprint $table) {
             $table->uuid('id')->primary();
+            
+            $table->enum('status', [BaseUtility::ACTIVE_STATUS, BaseUtility::INACTIVE_STATUS])->default(BaseUtility::ACTIVE_STATUS);
+
             $table->timestamps();
         });
     }
