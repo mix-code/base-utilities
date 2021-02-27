@@ -1,0 +1,54 @@
+{
+    "name": "mix-code/base-utilities",
+    "description": "MixCode Base Utilities used in our laravel specific applications",
+    "type": "library",
+    "keywords": [
+        "moaalaa",
+        "hamzaomar",
+        "hamza omar",
+        "Mohamed Alaa El-Din",
+        "base-utilities",
+        "mix-code-base-utilities",
+        "mix-cod"
+    ],
+    "homepage": "https://mix-code.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Alaa El-Din",
+            "email": "moaalaa16@gmail.com"
+        },
+        {
+            "name": "Hamza Omar",
+            "email": "hamzalilomar92@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^5.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "7.5",
+        "orchestra/testbench": "3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "MixCode\\BaseUtilities\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MixCode\\BaseUtilities\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MixCode\\BaseUtilities\\BaseUtilitiesServiceProvider"
+            ],
+            "aliases": {
+                "BaseUtilities": "MixCode\\BaseUtilities\\BaseUtilitiesFacade"
+            }
+        }
+    }
+}
